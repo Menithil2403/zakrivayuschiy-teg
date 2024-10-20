@@ -1,1 +1,1 @@
-https://github.com/Menithil2403/zakrivayuschiy-teg.git
+ https://github.com/Menithil2403/zakrivayuschiy-teg-f
