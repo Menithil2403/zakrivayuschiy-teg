@@ -75,16 +75,20 @@
 .dialog_floppy_span {
   display:inline-flex;
   align-items: center;
-} 
+}
+
 /*================body====================*/
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;       
   background-image: var(--grad_background_color);
   background-size: cover;
 }
+
 /*================heder====================*/
-.header{
+
+.header {
   display: flex;
   height: 100vh;
 }
@@ -235,7 +239,7 @@
   filter: grayscale(50%);
 }
 
-.img_5{
+.img_5 {
   background-image: url(../images/5.jpg);
   filter: drop-shadow(16px 16px 20px var(--main_color)) drop-shadow(-16px 0 20px var(--main_color));
 }

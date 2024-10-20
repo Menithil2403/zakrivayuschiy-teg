@@ -30,50 +30,54 @@
       translate: 5px 0px;
     }
 }
+
 /* ====================ani_hart======================== */
-.is-liked  {
-    animation: blink 0.3s ease-in;
-  }
-  
-  @keyframes blink {
-    from {
-      transform: scale(1.5);
-    }
-  
-    to {
-      transform: scale(1);
-    }
-  }
-  
-  .is-liked .sparks {
-    animation: sparks 0.3s 0.3s ease-in;
-  }
-  
-  @keyframes sparks {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+
+.is-liked {
+  animation: blink 0.3s ease-in;
 }
+  
+@keyframes blink {
+  from {
+    transform: scale(1.5);
+  }
+  
+  to {
+    transform: scale(1);
+  }
+}
+  
+.is-liked .sparks {
+  animation: sparks 0.3s 0.3s ease-in;
+}
+  
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
 /* =========================ani_last_cart======================== */
+
 .img_8 {
-    background-image: url(../images/8.jpg);
-    filter: saturate(200%);
+  background-image: url(../images/8.jpg);
+  filter: saturate(200%);
+  filter: drop-shadow(16px 16px 20px var(--main_color)) drop-shadow(-16px 0 20px var(--main_color));
+  visibility:visible;
+  animation: blind 1s  infinite alternate ease-in;
+  transition: all 1s;
+}
+  
+@keyframes blind {
+  from {
     filter: drop-shadow(16px 16px 20px var(--main_color)) drop-shadow(-16px 0 20px var(--main_color));
-    visibility:visible;
-    animation: blind 1s  infinite alternate ease-in;
-    transition: all 1s;
   }
   
-  @keyframes blind {
-    from {
-      filter: drop-shadow(16px 16px 20px var(--main_color)) drop-shadow(-16px 0 20px var(--main_color));
-    }
-  
-    to {
-      filter: drop-shadow(16px 16px 20px transparent) drop-shadow(-16px 0 20px transparent);
-    }
+  to {
+    filter: drop-shadow(16px 16px 20px transparent) drop-shadow(-16px 0 20px transparent);
   }
+}
