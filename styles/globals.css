@@ -30,13 +30,6 @@ a {
   color: inherit;
 }
 
-button,
-input {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-}
-
 ul,
 ol {
   list-style: none;
@@ -50,4 +43,44 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+.button_core {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  background-image: linear-gradient(var(--main_color),var(--main_color));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s, color 1s;
+  font-family: var(--font_accent);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.6px;
+  color: var(--main_color);
+  border: 2px solid var(--main_color);
+  background-color: var(--background_color);
+
+}
+
+.button_core:hover {
+  background-size: 100% 100%;
+  color: var(--color_text_change_button)
+}
+
+.button_core:hover .svg__floppy-container {
+  fill: var(--color_text_change_button);
+  transition: fill 1s ease-in-out;
+}
+
+.button_core:focus {
+  outline: none;
+}
+
+.button_core:focus-visible {
+  border: 1px solid var(--main_color);
+  box-shadow: 2px 2px var(--main_color);
+  transition: box-shadow .3s ease-in-out;
 }
