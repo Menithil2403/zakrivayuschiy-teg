@@ -45,7 +45,7 @@ ol {
   white-space: nowrap;
 }
 
-.button_core {
+/* .button_core {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -54,7 +54,7 @@ ol {
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0% 100%;
-  transition: background-size 0.5s, color 1s;
+  transition: background-size 0.5s, color 0.5s;
   font-family: var(--font_accent);
   font-size: 14px;
   font-weight: 400;
@@ -71,7 +71,7 @@ ol {
 
 .button_core:hover .svg__floppy-container {
   fill: var(--color_text_change_button);
-  transition: fill 1s ease-in-out;
+  transition: fill 0.25s ease-in-out;
 }
 
 .button_core:focus {
@@ -79,7 +79,7 @@ ol {
 }
 
 .button_core:focus-visible {
-  border: 1px solid var(--main_color);
+  border: 2px solid var(--main_color);
   box-shadow: 2px 2px var(--main_color);
-  transition: box-shadow .3s ease-in-out;
-}
+  transition: box-shadow 0.3s ease;
+} */
