@@ -47,12 +47,13 @@
   transform: translateX(-100%);
 }
 
-.button_core:hover::before {
-  transform: translateX(0);
+.button__text {
+  mix-blend-mode:difference;
+  color: var(--color_text_button);
 }
 
-.button_core:hover {
-  color: var(--color_text_change_button);
+.button_core:hover::before {
+  transform: translateX(0);
 }
 
 .button_core:hover .svg__floppy-container {
@@ -365,7 +366,7 @@
 
   color: var(--label_text_color);
   font-family: var(--font_accent);
-  font-variation-settings: 'wght' var(--font_weigh-main-heading);
+  font-weight: var(--font_weigh-acent-rglr);
 }
 
 .watermark {
@@ -395,7 +396,7 @@
 .card__text {
   font-family: var(--font_text);
   font-size: var(--font_size_text);
-  font-variation-settings: 'wght' var(--font_weigh-main-heading);
+  font-variation-settings: 'wght' var(--font_weigh-main-text);
   line-height: 21px;
   text-align: left;
   color: var(--main_color);
@@ -541,7 +542,6 @@
 
 /*============================================footer=====================================================*/
 
-
 .footer__button {
   flex-flow: row wrap;
   width: clamp(19.125rem, 18.487rem + 2.723vw, 20.938rem);
@@ -552,7 +552,7 @@
 
 .svg__floppy-container {
   fill: var(--main_color);
-  transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s  0.1s ease-in-out;
   width: 66px;
 }
 

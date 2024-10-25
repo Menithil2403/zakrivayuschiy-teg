@@ -7,8 +7,8 @@
     --background_color-popover: rgba(0, 0, 0, 0.7);
     --font_size_text: 18px;
     --grad_background_color:   
-        repeating-linear-gradient(180deg, #000 1px 2px, transparent 2px 4px),
-        repeating-linear-gradient(90deg, #000 1px 2px, transparent 2px 4px),
+        repeating-linear-gradient(180deg, #000 1px 2px, transparent 2px 3px),
+        repeating-linear-gradient(90deg, #000 1px 2px, transparent 2px 3px),
         linear-gradient(180deg, #007f0c, #004306);
     --label_text-shadow_color: rgba(0, 0, 0, 0.354);
     --label_text_color: rgba(0, 204, 20, 0.354);
@@ -18,6 +18,7 @@
     --font_weigh-main-heading: 787;
     --font_weigh-main-text: 465;
     --font_weigh-acent-rglr: 400;
+    --color_text_button: rgba(0, 204, 20, 1);
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,8 +30,8 @@
         --background_color-popover: rgba(0, 0, 0, 0.7);
         --font_size_text: 18px;
         --grad_background_color:   
-            repeating-linear-gradient(180deg, #d3d3d3 1px 2px, transparent 2px 4px),
-            repeating-linear-gradient(90deg, #d3d3d3 1px 2px, transparent 2px 4px),
+            repeating-linear-gradient(180deg, #000 1px 2px, transparent 2px 3px),
+            repeating-linear-gradient(90deg, #000 1px 2px, transparent 2px 3px),
             linear-gradient(180deg, #e7e7e7, #1a1a1a);
         --label_text-shadow_color: rgba(255, 255, 255, 0.354);
         --label_text_color: rgba(0, 0, 0, 0.354);
@@ -40,6 +41,7 @@
         --font_weigh-main-heading: 700;
         --font_weigh-main-text: 400;
         --font_weigh-acent-rglr: 400;
+        --color_text_button: rgba(255, 255, 255, 1);
     }
 }
 .theme-dark {
@@ -50,8 +52,8 @@
     --background_color-popover: rgba(0, 0, 0, 0.7);
     --font_size_text: 18px;
     --grad_background_color:   
-        repeating-linear-gradient(180deg, #000 1px 2px, transparent 2px 4px),
-        repeating-linear-gradient(90deg, #000 1px 2px, transparent 2px 4px),
+        repeating-linear-gradient(180deg, #000 1px 2px, transparent 2px 3px),
+        repeating-linear-gradient(90deg, #000 1px 2px, transparent 2px 3px),
         linear-gradient(180deg, #007f0c, #004306);
     --label_text-shadow_color: rgba(0, 0, 0, 0.354);
     --label_text_color: rgba(0, 204, 20, 0.354);
@@ -61,6 +63,7 @@
     --font_weigh-main-heading: 787;
     --font_weigh-main-text: 465;
     --font_weigh-acent-rglr: 400;
+    --color_text_button: rgba(0, 204, 20, 1);
 }
 
 .theme-light {
@@ -71,8 +74,8 @@
     --background_color-popover: rgba(0, 0, 0, 0.7);
     --font_size_text: 18px;
     --grad_background_color:   
-        repeating-linear-gradient(180deg, #d3d3d3 1px 2px, transparent 2px 4px),
-        repeating-linear-gradient(90deg, #d3d3d3 1px 2px, transparent 2px 4px),
+        repeating-linear-gradient(180deg, #000 1px 2px, transparent 2px 3px),
+        repeating-linear-gradient(90deg, #000 1px 2px, transparent 2px 3px),
         linear-gradient(180deg, #e7e7e7, #1a1a1a);
     --label_text-shadow_color: rgba(255, 255, 255, 0.354);
     --label_text_color: rgba(0, 0, 0, 0.354);
@@ -82,4 +85,5 @@
     --font_weigh-main-heading: 700;
     --font_weigh-main-text: 400;
     --font_weigh-acent-rglr: 400;
+    --color_text_button: rgba(255, 255, 255, 1);
 }
