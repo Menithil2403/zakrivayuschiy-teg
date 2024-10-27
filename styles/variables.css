@@ -7,8 +7,8 @@
     --background_color-popover: rgba(0, 0, 0, 0.7);
     --font_size_text: 18px;
     --grad_background_color:   
-        repeating-linear-gradient(180deg, #000 1px 2px, transparent 2px 3px),
-        repeating-linear-gradient(90deg, #000 1px 2px, transparent 2px 3px),
+        repeating-linear-gradient(180deg, #000 1px 3px, transparent 3px 5px),
+        repeating-linear-gradient(90deg, #000 1px 3px, transparent 3px 5px),
         linear-gradient(180deg, #007f0c, #004306);
     --label_text-shadow_color: rgba(0, 0, 0, 0.354);
     --label_text_color: rgba(0, 204, 20, 0.354);

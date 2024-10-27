@@ -56,11 +56,6 @@
   transform: translateX(0);
 }
 
-.button_core:hover .svg__floppy-container {
-  fill: var(--color_text_button);
-  mix-blend-mode: difference;
-}
-
 .button_core:focus {
   outline: none;
 }
@@ -72,11 +67,14 @@
 
 /*================dialog====================*/
 .my-popover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
   width: clamp(21.313rem, 21.048rem + 1.127vw, 22.063rem);
   background-color: var(--background_color);
   border: 1px solid var(--main_color);
   text-align: center;
-  margin-top: clamp(26.813rem, 23.754rem + 13.052vw, 35.5rem);
 }
 
 .my-popover::backdrop {
@@ -140,6 +138,7 @@
   min-block-size: 100dvb;       
   background-image: var(--grad_background_color);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*================heder====================*/
@@ -262,7 +261,7 @@
   height: 2px;
   margin-top: 3px;
   background-color: var(--main_color);
-  transition: width 0.6s;
+  transition: width 0.3s;
   margin-left: 25px;
 }
 
@@ -374,7 +373,6 @@
   right: 0;
   padding: 25px clamp(0.688rem, 0.379rem + 1.315vw, 1.563rem);
   text-align: right;
-  text-transform: uppercase;
   font-size: clamp(0.875rem, 0.787rem + 0.376vw, 1.125rem);
   
   text-shadow:
@@ -457,6 +455,20 @@
 .card__icon-button:hover .core {
   fill: var(--main_color);
   transition: fill 0.3s linear;
+}
+
+/* ======================is-liked_hover_heart================ */
+
+.card__icon-button:hover .is-liked .core {
+  fill: var( --color_fill_heart);
+}
+
+.card__icon-button:hover .is-liked .main-body {
+  fill: var( --color_fill_heart);
+}
+
+.card__icon-button:hover .is-liked .contour {
+  fill: var( --color_fill_heart);
 }
 
 /* =====================active-heart========================= */
